@@ -1,3 +1,11 @@
-<p>
-  volunteer-detail works!
-</p>
+<div class="details">
+  <img src= "{{(volunteerToDisplay | async)?.image}}"/>
+  <h2>{{(volunteerToDisplay | async)?.name}}</h2>
+  <br>
+  <h4><em>{{(volunteerToDisplay | async)?.quote}}</em></h4>
+  <hr>
+  <h4>{{(volunteerToDisplay | async)?.country}} |
+  {{(volunteerToDisplay | async)?.region}}</h4>
+  <br>
+  <h4><em>{{(volunteerToDisplay | async)?.story}}</em></h4>
+</div>
