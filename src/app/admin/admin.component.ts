@@ -20,5 +20,4 @@ export class AdminComponent implements OnInit {
     var newVolunteer: Volunteer = new Volunteer(name, quote, country, region, story, category, image);
     this.volunteerService.addVolunteer(newVolunteer);
   }
-
 }

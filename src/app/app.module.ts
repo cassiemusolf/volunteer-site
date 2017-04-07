@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { VolunteerDetailComponent } from './volunteer-detail/volunteer-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditVolunteerComponent } from './edit-volunteer/edit-volunteer.component';
+import { CategoriesPipe } from './categories.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     WelcomeComponent,
     VolunteerDetailComponent,
     AdminComponent,
-    EditVolunteerComponent
+    EditVolunteerComponent,
+    CategoriesPipe
   ],
   imports: [
     BrowserModule,

@@ -38,13 +38,13 @@
         <label>Category:</label>
         <br>
         <select class="form-control" #newCategory>
-          <option [value]="Animals"> Animals </option>
-          <option [value]="Medical"> Medical </option>
-          <option [value]="Disaster"> Disaster Relief </option>
-          <option [value]="Construction"> Construction </option>
-          <option [value]="Orphanages"> Orphanages </option>
-          <option [value]="Teaching"> Teaching </option>
-          <option [value]="Other"> Other </option>
+          <option value="Animals"> Animals </option>
+          <option value="Medical"> Medical </option>
+          <option value="Disaster"> Disaster Relief </option>
+          <option value="Construction"> Construction </option>
+          <option value="Orphanages"> Orphanages </option>
+          <option value="Teaching"> Teaching </option>
+          <option value="Other"> Other </option>
         </select>
       </div>
 
@@ -54,7 +54,7 @@
         <input class="form-control" #newImage>
       </div>
       <br>
-      <button class="btn btn-primary" (click)="submitForm(newName.value, newQuote.value, newCountry.value, newRegion.value, newStory.value, newCategory.value, newImage.value); newName.value=''; newQuote.value=''; newCountry.value=''; newRegion.value=''; newStory.value=''; newCategory.value=''; newImage.value=''">Add</button>
+      <button class="btn btn-primary" (click)="submitForm(newName.value, newQuote.value, newCountry.value, newRegion.value, newStory.value,  newCategory.value, newImage.value); newName.value=''; newQuote.value=''; newCountry.value=''; newRegion.value=''; newStory.value=''; newCategory.value=''; newImage.value=''">Add</button>
     </div>
   </div>
 </div>

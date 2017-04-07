@@ -21,7 +21,7 @@ html body {
   text-align: center;
   border: 1px solid black;
   width: 450px;
-  height: 450px;
+  height: 470px;
   display: inline-block;
   margin: 10px;
 }
@@ -32,6 +32,15 @@ html body {
   padding: 10px;
 }
 
-.card-text{
+.card-text {
   padding: 10px;
+}
+
+.image-details {
+  width: 600px;
+  border-radius: 10%;
+}
+
+.edit-form {
+
 }

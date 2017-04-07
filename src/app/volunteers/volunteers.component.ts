@@ -24,4 +24,10 @@ export class VolunteersComponent implements OnInit {
     this.router.navigate(['volunteers', clickedVolunteer.$key]);
   }
 
+  filterByCategories: string = "All Volunteers";
+
+  onChange(optionFromMenu) {
+  this.filterByCategories = optionFromMenu;
+}
+
 }
