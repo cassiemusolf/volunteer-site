@@ -24,7 +24,7 @@ html body {
   text-align: center;
   border: 1px solid black;
   width: 450px;
-  height: 500px;
+  height: 550px;
   display: inline-block;
   margin: 10px;
 }
@@ -45,5 +45,66 @@ html body {
 }
 
 .edit-form {
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.about-img {
+  border-radius: 8%;
+}
+
+.about-page {
+  text-align: center;
+}
+
+li {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+label {
+  font-size: 18px;
+}
+
+.panel-title {
+  font-size: 20px !important;
+}
+
+input {
+  font-size: 18px;
+}
+
+.navbar-brand {
+  font-size: 22px !important;
+  color: #8c152c !important;
+}
+
+.icon {
+  float: left;
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.welcome {
+  color: #8c152c;
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url("/assets/images/elephant.jpg");
+  height: 400px;
+  background-position: center;
+  box-shadow: 5px 5px 5px darkgrey; 
+}
+
+.welcome-message {
+  text-align: center;
+  background-color: #8c152c;
+  padding: 10px;
+  color: white;
+  box-shadow: 5px 5px 5px darkgrey;
 }

@@ -1,11 +1,13 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Global Volunteers</a>
+      <img src="/assets/images/Globe.png" class="d-inline-block align-top icon" alt="Globe" routerLink="">
+      <a class="navbar-brand" routerLink="">Around The World Volunteers</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li><a routerLink="volunteers">Our Volunteers</a></li>
       <li><a routerLink="about">About Us</a></li>
+      <li><a class="text-muted" routerLink="admin">Admin</a></li>
     </ul>
   </div>
 </nav>
@@ -14,9 +16,3 @@
   <h1></h1>
   <router-outlet></router-outlet>
 </div>
-
-<footer class="footer">
-  <div class="container">
-    <a class="text-muted" routerLink="admin">Admin</a>
-  </div>
-</footer>
