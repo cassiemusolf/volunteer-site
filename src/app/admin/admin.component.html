@@ -1,3 +1,50 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add a New Volunteer</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Volunteer Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Volunteer Quote:</label>
+        <br>
+        <input #newQuote>
+      </div>
+
+      <div>
+        <label>Current Volunteer Country:</label>
+        <br>
+        <input #newCountry>
+      </div>
+
+      <div>
+        <label>Current Volunteer Region:</label>
+        <br>
+        <input #newRegion>
+      </div>
+
+      <div>
+        <label>Volunteer Story:</label>
+        <br>
+        <textarea #newStory></textarea>
+      </div>
+
+      <div>
+        <label>Volunteer Image URL:</label>
+        <br>
+        <input #newImage>
+      </div>
+
+      <button (click)="submitForm(newName.value, newQuote.value, newCountry.value, newRegion.value, newStory.value, newImage.value); newName.value=''; newQuote.value=''; newCountry.value=''; newRegion.value=''; newStory.value=''; newImage.value=''">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-volunteers></app-volunteers>
+</div>

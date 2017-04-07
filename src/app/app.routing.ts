@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { VolunteersComponent } from './volunteers/volunteers.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { VolunteerDetailComponent } from './volunteer-detail/volunteer-detail.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'volunteers/:id',
     component: VolunteerDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
  ];
 
