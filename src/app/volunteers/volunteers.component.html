@@ -3,5 +3,6 @@
 <div *ngFor="let volunteer of volunteers | async" class="panel panel-default">
   <div class="panel-body">
     <h3>{{volunteer.name}}</h3>
+    <h2>{{volunteer.$key}}</h2>
   </div>
 </div>

@@ -10,6 +10,7 @@ import { VolunteersComponent } from './volunteers/volunteers.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
+import { VolunteerDetailComponent } from './volunteer-detail/volunteer-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     AboutComponent,
     VolunteersComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    VolunteerDetailComponent
   ],
   imports: [
     BrowserModule,
