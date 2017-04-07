@@ -1,9 +1,9 @@
 <h2>Our Volunteers</h2>
 
-<div *ngFor="let volunteer of volunteers | async" class="panel panel-default tiles">
-  <div class="panel-body">
-    <h3 (click)="goToDetailPage(volunteer)">{{volunteer.name}}</h3>
-  </div>
+<div *ngFor="let volunteer of volunteers | async" class="tiles">
+    <img class="card-img-top" src="{{volunteer.image}}"/>
+    <h3 class="card-title" (click)="goToDetailPage(volunteer)">{{volunteer.name}}</h3>
+    <h4 class="card-text"><em>{{volunteer.quote}}</em></h4>
   <div *ngIf="currentRoute === '/admin'" class="details">
   {{volunteer.country}}
   {{volunteer.story}}
