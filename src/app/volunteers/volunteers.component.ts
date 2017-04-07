@@ -12,6 +12,7 @@ import { VolunteerService } from '../volunteer.service';
 })
 export class VolunteersComponent implements OnInit {
   volunteers: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private volunteerService: VolunteerService) { }
 

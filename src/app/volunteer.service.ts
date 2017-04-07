@@ -12,11 +12,18 @@ export class VolunteerService {
   }
 
   getVolunteers() {
-  return this.volunteers;
-}
+    return this.volunteers;
+  }
 
-getVolunteerById(volunteerId: string){
-  return this.angularFire.database.object('volunteers/' + volunteerId);
-}
+  getVolunteerById(volunteerId: string){
+    return this.angularFire.database.object('volunteers/' + volunteerId);
+  }
 
-}
+  updateVolunteer(localUpdatedVolunteer){
+    var volunteerEntryInFirebase = this.getVolunteerById(localUpdatedVolunteer.$key);
+    volunteerEntryInFirebase.update({name: localUpdatedVolunteer.name,
+      quote: localUpdatedVolunteer.quote,
+      country: localUpdatedVolunteer.country, region: localUpdatedVolunteer.region, story: localUpdatedVolunteer.story, image: localUpdatedVolunteer.image});
+    }
+
+  }

@@ -14,4 +14,9 @@ html body {
 
 .details {
   text-align: center;
+  padding: 10px;
+}
+
+.tiles {
+  text-align: center;
 }
