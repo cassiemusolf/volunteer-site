@@ -1,4 +1,8 @@
-# VolunteerSite
+# _VolunteerSite_
+
+#### _Web Application for a Volunteer Group, April 7, 2017_
+
+#### By _**Cassie Musolf**_
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
