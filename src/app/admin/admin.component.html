@@ -5,42 +5,56 @@
   <div class="panel-body">
     <div>
       <div>
-        <label>Volunteer Name:</label>
+        <label>Name:</label>
         <br>
-        <input #newName>
+        <input class="form-control" #newName>
       </div>
 
       <div>
-        <label>Volunteer Quote:</label>
+        <label>Quote:</label>
         <br>
-        <input #newQuote>
+        <input class="form-control" #newQuote>
       </div>
 
       <div>
-        <label>Current Volunteer Country:</label>
+        <label>Country:</label>
         <br>
-        <input #newCountry>
+        <input class="form-control" #newCountry>
       </div>
 
       <div>
-        <label>Current Volunteer Region:</label>
+        <label>Region:</label>
         <br>
-        <input #newRegion>
+        <input class="form-control" #newRegion>
       </div>
 
       <div>
-        <label>Volunteer Story:</label>
+        <label>Story:</label>
         <br>
-        <textarea #newStory></textarea>
+        <textarea class="form-control" #newStory></textarea>
       </div>
 
       <div>
-        <label>Volunteer Image URL:</label>
+        <label>Category:</label>
         <br>
-        <input #newImage>
+        <select class="form-control" #newCategory>
+          <option [value]="Animals"> Animals </option>
+          <option [value]="Medical"> Medical </option>
+          <option [value]="Disaster"> Disaster Relief </option>
+          <option [value]="Construction"> Construction </option>
+          <option [value]="Orphanages"> Orphanages </option>
+          <option [value]="Teaching"> Teaching </option>
+          <option [value]="Other"> Other </option>
+        </select>
       </div>
 
-      <button (click)="submitForm(newName.value, newQuote.value, newCountry.value, newRegion.value, newStory.value, newImage.value); newName.value=''; newQuote.value=''; newCountry.value=''; newRegion.value=''; newStory.value=''; newImage.value=''">Add</button>
+      <div>
+        <label>Image:</label>
+        <br>
+        <input class="form-control" #newImage>
+      </div>
+      <br>
+      <button class="btn btn-primary" (click)="submitForm(newName.value, newQuote.value, newCountry.value, newRegion.value, newStory.value, newCategory.value, newImage.value); newName.value=''; newQuote.value=''; newCountry.value=''; newRegion.value=''; newStory.value=''; newCategory.value=''; newImage.value=''">Add</button>
     </div>
   </div>
 </div>

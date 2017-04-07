@@ -16,4 +16,9 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
+  submitForm(name: string, quote: string, country: string, region: string, story: string, category: string, image: string) {
+    var newVolunteer: Volunteer = new Volunteer(name, quote, country, region, story, category, image);
+    this.volunteerService.addVolunteer(newVolunteer);
+  }
+
 }

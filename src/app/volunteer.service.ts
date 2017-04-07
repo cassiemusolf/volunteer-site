@@ -19,6 +19,10 @@ export class VolunteerService {
     return this.angularFire.database.object('volunteers/' + volunteerId);
   }
 
+  addVolunteer(newVolunteer: Volunteer) {
+  this.volunteers.push(newVolunteer);
+}
+
   updateVolunteer(localUpdatedVolunteer){
     var volunteerEntryInFirebase = this.getVolunteerById(localUpdatedVolunteer.$key);
     volunteerEntryInFirebase.update({name: localUpdatedVolunteer.name,
