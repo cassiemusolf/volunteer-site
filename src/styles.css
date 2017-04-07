@@ -10,18 +10,21 @@
 
 html body {
   margin-bottom: 100px;
+  font-family: 'Crimson Text', serif;
 }
 
 .details {
   text-align: center;
   padding: 10px;
+  /*border: 1px solid black;*/
+  padding: 20px;
 }
 
 .tiles {
   text-align: center;
   border: 1px solid black;
   width: 450px;
-  height: 470px;
+  height: 500px;
   display: inline-block;
   margin: 10px;
 }
@@ -42,5 +45,5 @@ html body {
 }
 
 .edit-form {
-
+  margin-top: 20px;
 }

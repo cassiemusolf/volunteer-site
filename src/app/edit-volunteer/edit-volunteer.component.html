@@ -1,6 +1,6 @@
-<!-- <button class="btn btn-primary" (click)="editVolunteer()">Edit Profile</button> -->
+<button class="btn btn-primary" (click)='hideElement = !hideElement'>Edit Profile</button>
 
-<div *ngIf="selectedVolunteer" class="edit-form">
+<div *ngIf="hideElement" class="edit-form">
   <h3>Edit Volunteer</h3>
   <div>
     <label>Volunteer Name:</label>
@@ -52,6 +52,6 @@
     <input class="form-control" [(ngModel)]="selectedVolunteer.image">
   </div>
   <br>
-  <button class="btn btn-primary" (click)="beginUpdatingVolunteer(selectedVolunteer)">Update</button>
+  <button class="btn btn-primary" (click)="beginUpdatingVolunteer(selectedVolunteer); hideElement = !hideElement">Update</button>
   <button class="btn btn-primary" (click)="beginDeletingVolunteer(selectedVolunteer)">Delete</button>
 </div>
