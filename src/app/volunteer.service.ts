@@ -26,4 +26,9 @@ export class VolunteerService {
       country: localUpdatedVolunteer.country, region: localUpdatedVolunteer.region, story: localUpdatedVolunteer.story, image: localUpdatedVolunteer.image});
     }
 
+    deleteVolunteer(localVolunteerToDelete){
+      var volunteerEntryInFirebase = this.getVolunteerById(localVolunteerToDelete.$key);
+      volunteerEntryInFirebase.remove();
+    }
+
   }

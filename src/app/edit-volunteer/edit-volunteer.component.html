@@ -1,43 +1,44 @@
-<button class="btn btn-primary" (click)="showForm()">Edit Profile</button>
+<!-- <button class="btn btn-primary" (click)="editVolunteer()">Edit Profile</button> -->
 
-
+<div *ngIf="selectedVolunteer">
   <h3>Edit Volunteer</h3>
-    <div>
-      <div>
-        <label>Volunteer Name:</label>
-        <br>
-        <input [(ngModel)]="selectedVolunteer.name">
-      </div>
+  <div>
+    <label>Volunteer Name:</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedVolunteer.name">
+  </div>
 
-      <div>
-        <label>Volunteer Quote:</label>
-        <br>
-        <input [(ngModel)]="selectedVolunteer.quote">
-      </div>
+  <div>
+    <label>Volunteer Quote:</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedVolunteer.quote">
+  </div>
 
-      <div>
-        <label>Current Volunteer Country:</label>
-        <br>
-        <input [(ngModel)]="selectedVolunteer.country">
-      </div>
+  <div>
+    <label>Volunteer Country:</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedVolunteer.country">
+  </div>
 
-      <div>
-        <label>Current Volunteer Region:</label>
-        <br>
-        <input [(ngModel)]="selectedVolunteer.region">
-      </div>
+  <div>
+    <label>Volunteer Region:</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedVolunteer.region">
+  </div>
 
-      <div>
-        <label>Volunteer Story:</label>
-        <br>
-        <textarea [(ngModel)]="selectedVolunteer.story"></textarea>
-      </div>
+  <div>
+    <label>Volunteer Story:</label>
+    <br>
+    <textarea class="form-control" [(ngModel)]="selectedVolunteer.story"></textarea>
+  </div>
 
-      <div>
-        <label>Volunteer Image URL:</label>
-        <br>
-        <input [(ngModel)]="selectedVolunteer.image">
-      </div>
-
-      <button (click)="beginUpdatingVolunteer(selectedVolunteer)">Update</button>
-    </div>
+  <div>
+    <label>Volunteer Image URL:</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedVolunteer.image">
+  </div>
+  <br>
+  <button class="btn btn-primary" (click)="beginUpdatingVolunteer(selectedVolunteer)">Update</button>
+  <hr>
+  <button class="btn btn-primary" (click)="beginDeletingAlbum(selectedAlbum)">Delete</button>
+</div>
