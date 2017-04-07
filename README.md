@@ -1,8 +1,10 @@
-# _VolunteerSite_
+# _Around the World Volunteers_
 
-#### _Web Application for a Volunteer Group, April 7, 2017_
+### _Web Application for a Global Volunteer Company_
 
-#### By _**Cassie Musolf**_
+### _April 7, 2017_
+
+## By _**Cassie Musolf**_
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
@@ -30,3 +32,13 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Support and contact details
+
+_If you have any concerns or questions feel free to email me at cassiemusolf@gmail.com_
+
+### License
+
+*Licensed under an MIT License*
+
+Copyright (c) 2017 **_Cassie Musolf_**
