@@ -16,7 +16,6 @@ html body {
 .details {
   text-align: center;
   padding: 10px;
-  /*border: 1px solid black;*/
   padding: 20px;
 }
 
@@ -27,12 +26,15 @@ html body {
   height: 550px;
   display: inline-block;
   margin: 10px;
+  border-radius: 15%;
+  box-shadow: 5px 5px 5px darkgrey;
 }
 
 .card-img-top {
   width: 400px;
-  border-radius: 10%;
+  border-radius: 15%;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .card-text {
@@ -41,19 +43,29 @@ html body {
 
 .image-details {
   width: 600px;
-  border-radius: 10%;
+  border-radius: 15%;
+  box-shadow: 5px 5px 5px darkgrey;
 }
 
 .edit-form {
   margin-top: 40px;
+  border: 1px solid #8c152c;
+  padding: 10px;
 }
 
 .btn {
   margin: 10px;
 }
 
+.edit-link {
+  margin-top: -10px;
+  /*color: #8c152c;*/
+  text-shadow: 2px 2px 2px darkgrey;
+}
+
 .about-img {
   border-radius: 8%;
+  box-shadow: 5px 5px 5px darkgrey;
 }
 
 .about-page {
@@ -92,13 +104,15 @@ input {
 .welcome {
   color: #8c152c;
   text-align: center;
+  text-shadow: 2px 2px 2px darkgrey;
+  font-size: 50px !important;
 }
 
 .jumbotron {
   background-image: url("/assets/images/elephant.jpg");
   height: 400px;
   background-position: center;
-  box-shadow: 5px 5px 5px darkgrey; 
+  box-shadow: 5px 5px 5px darkgrey;
 }
 
 .welcome-message {
@@ -107,4 +121,32 @@ input {
   padding: 10px;
   color: white;
   box-shadow: 5px 5px 5px darkgrey;
+}
+
+.volunteer-intro {
+  color: #8c152c;
+  text-align: center;
+  text-shadow: 2px 2px 2px darkgrey;
+}
+
+.select-form {
+  width: 350px !important;
+  float: center;
+  margin-bottom: 15px;
+}
+
+.details-link {
+  color: #8c152c;
+  text-shadow: 2px 2px 2px darkgrey;
+}
+
+.about-title {
+  color: #8c152c;
+}
+
+.detail-name {
+  color: #8c152c;
+  padding: 20px;
+  font-size: 40px !important;
+  font-style: italic;
 }

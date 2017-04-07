@@ -1,9 +1,9 @@
-<h2>Our Volunteers</h2>
-
-<div>
+<h1 class="volunteer-intro">Our Volunteers</h1>
+<hr>
+<div class="filter">
   <label>Which Type of Volunteers Do You Want To See?</label>
   <br>
-  <select class="form-control" (change)="onChange($event.target.value)">
+  <select class="form-control select-form" (change)="onChange($event.target.value)">
     <option value="Animals"> Animals </option>
     <option value="Medical"> Medical </option>
     <option value="Disaster"> Disaster Relief </option>
@@ -19,9 +19,9 @@
     <img class="card-img-top" src="{{volunteer.image}}"/>
     <h3 class="card-title" (click)="goToDetailPage(volunteer)">{{volunteer.name}}</h3>
     <h4 class="card-text"><em>{{volunteer.quote}}</em></h4>
+    <h4>{{volunteer.country}} | {{volunteer.region}}</h4>
+    <h3 class="details-link" (click)="goToDetailPage(volunteer)">View Profile</h3>
   <div *ngIf="currentRoute === '/admin'" class="details">
-  <h4>{{volunteer.country}} | {{volunteer.region}}</h4>
-  <hr>
   <app-edit-volunteer [selectedVolunteer]="volunteer"></app-edit-volunteer>
 </div>
 

@@ -1,7 +1,7 @@
 <div class="details">
   <img class="image-details" src= "{{(volunteerToDisplay | async)?.image}}"/>
-  <h2>{{(volunteerToDisplay | async)?.name}}</h2>
-  <br>
+  <h2 class="detail-name">{{(volunteerToDisplay | async)?.name}}</h2>
+  <hr>
   <h4><em>{{(volunteerToDisplay | async)?.quote}}</em></h4>
   <hr>
   <h4>{{(volunteerToDisplay | async)?.country}} |
