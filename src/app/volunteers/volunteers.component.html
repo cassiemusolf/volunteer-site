@@ -1,8 +1,7 @@
 <h1 class="volunteer-intro">Our Volunteers</h1>
 <hr>
 <div class="filter">
-  <label>Which Type of Volunteers Do You Want To See?</label>
-  <br>
+  <label class="viewing">Which Volunteers Do You Want To View?</label>
   <select class="form-control select-form" (change)="onChange($event.target.value)">
     <option value="Animals"> Animals </option>
     <option value="Medical"> Medical </option>
@@ -14,10 +13,11 @@
     <option value="All Volunteers" selected="selected"> All </option>
   </select>
 </div>
+<hr>
 
 <div *ngFor="let volunteer of volunteers | async | categories:filterByCategories" class="tiles">
     <img class="card-img-top" src="{{volunteer.image}}"/>
-    <h3 class="card-title" (click)="goToDetailPage(volunteer)">{{volunteer.name}}</h3>
+    <h3 class="card-title" (click)="goToDetailPage(volunteer)"><strong>{{volunteer.name}}</strong></h3>
     <h4 class="card-text"><em>{{volunteer.quote}}</em></h4>
     <h4>{{volunteer.country}} | {{volunteer.region}}</h4>
     <h3 class="details-link" (click)="goToDetailPage(volunteer)">View Profile</h3>

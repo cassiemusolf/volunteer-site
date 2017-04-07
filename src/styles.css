@@ -60,7 +60,7 @@ html body {
 .edit-link {
   margin-top: -10px;
   /*color: #8c152c;*/
-  text-shadow: 2px 2px 2px darkgrey;
+  text-shadow: 1px 1px 1px darkgrey;
 }
 
 .about-img {
@@ -130,14 +130,14 @@ input {
 }
 
 .select-form {
-  width: 350px !important;
-  float: center;
+  width: 450px !important;
   margin-bottom: 15px;
+  float: right;
 }
 
 .details-link {
   color: #8c152c;
-  text-shadow: 2px 2px 2px darkgrey;
+  text-shadow: 1px 1px 1px darkgrey;
 }
 
 .about-title {
@@ -149,4 +149,12 @@ input {
   padding: 20px;
   font-size: 40px !important;
   font-style: italic;
+}
+
+.viewing {
+  font-size: 23px;
+}
+
+.filter {
+  margin-left: 20px;
 }
