@@ -33,6 +33,20 @@
   </div>
 
   <div>
+    <label>Category:</label>
+    <br>
+    <select class="form-control" [(ngModel)]="selectedVolunteer.category">
+      <option [value]="Animals"> Animals </option>
+      <option [value]="Medical"> Medical </option>
+      <option [value]="Disaster"> Disaster Relief </option>
+      <option [value]="Construction"> Construction </option>
+      <option [value]="Orphanages"> Orphanages </option>
+      <option [value]="Teaching"> Teaching </option>
+      <option [value]="Other"> Other </option>
+    </select>
+  </div>
+
+  <div>
     <label>Volunteer Image URL:</label>
     <br>
     <input class="form-control" [(ngModel)]="selectedVolunteer.image">
@@ -40,5 +54,5 @@
   <br>
   <button class="btn btn-primary" (click)="beginUpdatingVolunteer(selectedVolunteer)">Update</button>
   <hr>
-  <button class="btn btn-primary" (click)="beginDeletingAlbum(selectedAlbum)">Delete</button>
+  <button class="btn btn-primary" (click)="beginDeletingVolunteer(selectedVolunteer)">Delete</button>
 </div>

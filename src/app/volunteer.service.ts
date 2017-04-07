@@ -27,7 +27,7 @@ export class VolunteerService {
     var volunteerEntryInFirebase = this.getVolunteerById(localUpdatedVolunteer.$key);
     volunteerEntryInFirebase.update({name: localUpdatedVolunteer.name,
       quote: localUpdatedVolunteer.quote,
-      country: localUpdatedVolunteer.country, region: localUpdatedVolunteer.region, story: localUpdatedVolunteer.story, image: localUpdatedVolunteer.image});
+      country: localUpdatedVolunteer.country, region: localUpdatedVolunteer.region, story: localUpdatedVolunteer.story, category: localUpdatedVolunteer.category, image: localUpdatedVolunteer.image});
     }
 
     deleteVolunteer(localVolunteerToDelete){

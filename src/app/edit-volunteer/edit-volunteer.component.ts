@@ -16,10 +16,6 @@ export class EditVolunteerComponent implements OnInit {
   ngOnInit() {
   }
 
-  // editVolunteer(clickedVolunteer) {
-  //   this.selectedVolunteer != null;
-  // }
-
   beginUpdatingVolunteer(volunteerToUpdate){
     this.volunteerService.updateVolunteer(volunteerToUpdate);
   }
