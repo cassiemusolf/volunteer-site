@@ -14,6 +14,7 @@ import { VolunteerDetailComponent } from './volunteer-detail/volunteer-detail.co
 import { AdminComponent } from './admin/admin.component';
 import { EditVolunteerComponent } from './edit-volunteer/edit-volunteer.component';
 import { CategoriesPipe } from './categories.pipe';
+import { Angular2FontAwesomeModule } from 'angular2-font-awesome/angular2-font-awesome';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -38,7 +39,8 @@ export const firebaseConfig = {
     FormsModule,
     HttpModule,
     routing,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    Angular2FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
