@@ -1,13 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #f5f5f5;
-  padding: 15px;
-}
-
 html body {
   margin-bottom: 100px;
   font-family: 'Crimson Text', serif;
@@ -23,10 +14,8 @@ html body {
 .tiles {
   text-align: center;
   width: 450px;
-  /*height: 550px;*/
   display: inline-block;
   margin: 10px;
-  /*border-radius: 15%;*/
   box-shadow: 5px 5px 5px 5px darkgrey;
 }
 
@@ -61,8 +50,9 @@ html body {
 }
 
 .about-img {
-  border-radius: 8%;
+  /*border-radius: 8%;*/
   box-shadow: 5px 5px 5px darkgrey;
+  width: 100%;
 }
 
 .about-page {
@@ -89,6 +79,8 @@ input {
 .navbar-brand {
   font-size: 22px !important;
   color: #8c152c !important;
+  font-family: 'Marcellus SC', serif !important;
+  font-style: italic;
 }
 
 .icon {
@@ -99,10 +91,10 @@ input {
 }
 
 .welcome {
-  color: #8c152c;
+  color: #000000;
   text-align: center;
   text-shadow: 2px 2px 2px darkgrey;
-  font-size: 50px !important;
+  font-size: 40px !important;
 }
 
 .jumbotron {
@@ -169,7 +161,6 @@ input {
 }
 
 .syria-msg {
-  /*background-color: grey;*/
   padding: 15px;
   font-style: italic;
   box-shadow: 5px 5px 5px grey;
@@ -184,6 +175,7 @@ input {
   height: 62px;
   padding: 15px;
   background-position: bottom;
+  background-color: #f5f5f5;
 }
 
 .pull-right {
