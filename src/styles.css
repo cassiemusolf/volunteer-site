@@ -11,7 +11,10 @@
 html body {
   margin-bottom: 100px;
   font-family: 'Crimson Text', serif;
+  background-image: url("/assets/images/himilayan1.jpg");
 }
+
+
 
 .details {
   text-align: center;
@@ -21,13 +24,13 @@ html body {
 
 .tiles {
   text-align: center;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 450px;
-  height: 550px;
+  /*height: 550px;*/
   display: inline-block;
   margin: 10px;
-  border-radius: 15%;
-  box-shadow: 5px 5px 5px darkgrey;
+  /*border-radius: 15%;*/
+  box-shadow: 5px 5px 5px 5px darkgrey;
 }
 
 .card-img-top {
@@ -43,13 +46,13 @@ html body {
 
 .image-details {
   width: 600px;
-  border-radius: 15%;
+  /*border-radius: 15%;*/
   box-shadow: 5px 5px 5px darkgrey;
 }
 
 .edit-form {
   margin-top: 40px;
-  border: 1px solid #8c152c;
+  /*border: 1px solid #8c152c;*/
   padding: 10px;
 }
 
