@@ -1,62 +1,68 @@
-<div class="panel panel-default add-form">
-  <div class="panel-heading">
-    <h3 class="panel-title">Add a New Volunteer</h3>
-  </div>
-  <div class="panel-body">
-    <div>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+  <div class="panel panel-default add-form">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add a New Volunteer</h3>
+    </div>
+    <div class="panel-body">
       <div>
-        <label>Name:</label>
-        <br>
-        <input class="form-control" #newName>
-      </div>
+        <div>
+          <label>Name:</label>
+          <br>
+          <input class="form-control" #newName>
+        </div>
 
-      <div>
-        <label>Quote:</label>
-        <br>
-        <input class="form-control" #newQuote>
-      </div>
+        <div>
+          <label>Quote:</label>
+          <br>
+          <input class="form-control" #newQuote>
+        </div>
 
-      <div>
-        <label>Country:</label>
-        <br>
-        <input class="form-control" #newCountry>
-      </div>
+        <div>
+          <label>Country:</label>
+          <br>
+          <input class="form-control" #newCountry>
+        </div>
 
-      <div>
-        <label>Region:</label>
-        <br>
-        <input class="form-control" #newRegion>
-      </div>
+        <div>
+          <label>Region:</label>
+          <br>
+          <input class="form-control" #newRegion>
+        </div>
 
-      <div>
-        <label>Story:</label>
-        <br>
-        <textarea class="form-control" #newStory></textarea>
-      </div>
+        <div>
+          <label>Story:</label>
+          <br>
+          <textarea class="form-control" #newStory></textarea>
+        </div>
 
-      <div>
-        <label>Category:</label>
-        <br>
-        <select class="form-control" #newCategory>
-          <option value="Animals"> Animals </option>
-          <option value="Medical"> Medical </option>
-          <option value="Disaster"> Disaster Relief </option>
-          <option value="Construction"> Construction </option>
-          <option value="Orphanages"> Orphanages </option>
-          <option value="Teaching"> Teaching </option>
-          <option value="Other"> Other </option>
-        </select>
-      </div>
+        <div>
+          <label>Category:</label>
+          <br>
+          <select class="form-control" #newCategory>
+            <option value="Animals"> Animals </option>
+            <option value="Medical"> Medical </option>
+            <option value="Disaster"> Disaster Relief </option>
+            <option value="Construction"> Construction </option>
+            <option value="Orphanages"> Orphanages </option>
+            <option value="Teaching"> Teaching </option>
+            <option value="Other"> Other </option>
+          </select>
+        </div>
 
-      <div>
-        <label>Image:</label>
+        <div>
+          <label>Image:</label>
+          <br>
+          <input class="form-control" #newImage>
+        </div>
         <br>
-        <input class="form-control" #newImage>
+        <button class="btn btn-primary" (click)="submitForm(newName.value, newQuote.value, newCountry.value, newRegion.value, newStory.value,  newCategory.value, newImage.value); newName.value=''; newQuote.value=''; newCountry.value=''; newRegion.value=''; newStory.value=''; newCategory.value=''; newImage.value=''">Add</button>
       </div>
-      <br>
-      <button class="btn btn-primary" (click)="submitForm(newName.value, newQuote.value, newCountry.value, newRegion.value, newStory.value,  newCategory.value, newImage.value); newName.value=''; newQuote.value=''; newCountry.value=''; newRegion.value=''; newStory.value=''; newCategory.value=''; newImage.value=''">Add</button>
     </div>
   </div>
+    </div>
+    <div class="col-md-2"></div>
 </div>
 
 <div>
